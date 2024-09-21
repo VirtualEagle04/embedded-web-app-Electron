@@ -1,4 +1,5 @@
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
+const { default: PublisherGithub } = require('@electron-forge/publisher-github');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 
 module.exports = {
@@ -50,7 +51,7 @@ module.exports = {
           name: 'embedded-web-app-Electron'
         },
         prerelease: false,
-        draft: true
+        draft: false
       }
     }
   ]
